@@ -1,8 +1,3 @@
-.title {
-    font-size: 30px;
-    color: rgb(179, 88, 88);
-}
-
 .stats {
     display: flex;
     flex-direction: column;
