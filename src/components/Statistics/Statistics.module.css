@@ -1,0 +1,19 @@
+.title {
+    font-size: 30px;
+    color: rgb(179, 88, 88);
+}
+
+.stats {
+    display: flex;
+    flex-direction: column;
+}
+
+span {
+    color: rgb(73, 151, 73);
+    font-size: 25px;
+    font-weight: 700;
+}
+
+span:not(:last-child) {
+    margin-bottom: 20px;
+}
