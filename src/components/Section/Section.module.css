@@ -1,4 +1,5 @@
 .title {
     font-size: 30px;
-    color: rgb(179, 88, 88);
+    color: var(--primary-font-color);
+    margin-bottom: 20px;
 }

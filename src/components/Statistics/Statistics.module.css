@@ -4,7 +4,7 @@
 }
 
 span {
-    color: rgb(73, 151, 73);
+    color: var(--secondary-font-color);
     font-size: 25px;
     font-weight: 700;
 }
