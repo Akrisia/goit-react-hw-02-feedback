@@ -16,10 +16,8 @@ export class App extends Component {
   handleClick = (e) => {
     const id = e.target.id;
 
-    id === 'good' && this.setState({ good: this.state.good + 1 });
-    id === 'neutral' && this.setState({ neutral: this.state.neutral + 1 });
-    id === 'bad' && this.setState({ bad: this.state.bad + 1 });
-  };
+    this.setState({ [id]: this.state[id] + 1 });
+    };
 
   countTotalFeedback = () => {
     const { good, neutral, bad } = this.state;
