@@ -3,12 +3,13 @@ import s from './FeedbackOptions.module.css';
 
 const FeedbackOptions = ({ options, onLeaveFeedback }) => {
     return (
-        <ul className={s.controls}>
-            <button type='button' id={options[0]} onClick={onLeaveFeedback}>Good</button>
-            <button type='button' id={options[1]} onClick={onLeaveFeedback}>Neutral</button>
-            <button type='button' id={options[2]} onClick={onLeaveFeedback}>Bad</button>
-        </ul>
-    )
+        <div className={s.controls}>
+            {options.map((option) => {
+            return (
+                <button type='button' key={option} onClick={() => onLeaveFeedback(option)}>{option[0].toUpperCase() + option.slice(1)}</button>
+            )})}
+        </div>
+    );
 };
 
 FeedbackOptions.propTypes = {

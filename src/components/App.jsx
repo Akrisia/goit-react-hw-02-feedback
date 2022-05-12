@@ -13,10 +13,8 @@ export class App extends Component {
     bad: 0,
   };
 
-  handleClick = (e) => {
-    const id = e.target.id;
-
-    this.setState({ [id]: this.state[id] + 1 });
+  handleClick = (option) => {
+    this.setState({ [option]: this.state[option] + 1 });
     };
 
   countTotalFeedback = () => {
